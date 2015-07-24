@@ -11,8 +11,17 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
+# added these
+gem 'heroku'
+gem 'rails_12factor'
+gem 'less-rails'
+gem 'pg'
+gem 'kaminari'
+gem 'paperclip'
+gem 'therubyracer'
+# up to here
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
