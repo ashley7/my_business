@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -13,9 +13,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # added these
 gem 'heroku'
-gem 'rails_12factor'
+
 gem 'less-rails'
-gem 'pg'
+
 gem 'kaminari'
 gem 'paperclip'
 gem 'therubyracer'
@@ -36,14 +36,19 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
-# gem 'unicorn'
+# gem 'uni
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+group :production do
+	gem 'rails_12factor'
+	gem 'pg'
+end
 
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'debugger'
+  gem 'sqlite3'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
